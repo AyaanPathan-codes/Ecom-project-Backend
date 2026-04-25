@@ -1,8 +1,11 @@
 package com.ayaan.Ecom_project_1.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
+
 public class OrderItem {
 
     @Id
