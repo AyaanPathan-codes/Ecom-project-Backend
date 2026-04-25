@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -22,4 +23,4 @@ public class Order {
         @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
         private List<OrderItem> orderItems;
     }
-}
+
